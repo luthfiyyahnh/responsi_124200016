@@ -76,12 +76,12 @@ class _MenuState extends State<Menu> {
                       height: 35,
                       child: FittedBox(
                           fit: BoxFit.cover,
-                          child: Image.network('https://countryflagsapi.com/png/${matchesModel!.homeTeam!.name!}'))),
-                  Text(("${matchesModel!.homeTeam!.name!}")),
-                  Text(("${matchesModel!.homeTeam!.goals!}")),
+                          child: Image.network('https://countryflagsapi.com/png/${matchesModel.homeTeam!.name!}'))),
+                  Text(("${matchesModel.homeTeam!.name!}")),
+                  Text(("${matchesModel.homeTeam!.goals!}")),
                   Text('-'),
-                  Text(("${matchesModel!.awayTeam!.goals!}")),
-                  Text(("${matchesModel!.awayTeam!.name!}")),
+                  Text(("${matchesModel.awayTeam!.goals!}")),
+                  Text(("${matchesModel.awayTeam!.name!}")),
                   Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -90,7 +90,7 @@ class _MenuState extends State<Menu> {
                       height: 20,
                       child: FittedBox(
                           fit: BoxFit.cover,
-                          child: Image.network('https://countryflagsapi.com/png/${matchesModel!.awayTeam!.name!}'))),
+                          child: Image.network('https://countryflagsapi.com/png/${matchesModel.awayTeam!.name!}'))),
 
                 ],
               ),
